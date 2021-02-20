@@ -9,9 +9,6 @@ from flask import Response
 from configparser import ConfigParser
 
 app = Flask(__name__)
-DatabasePath = "/Users/sedatozdemir/Desktop/USOM API/Database.db"
-
-
 def GetConfigurations(get):
     # instantiate
     config = ConfigParser()
