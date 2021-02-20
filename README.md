@@ -53,7 +53,7 @@ GET /api/usom?page=0&size=10&orderby=desc&data_type=malicious_links&access_token
 | `access_token` | `string` | **Required**. Your access token |
 | `page` | `int` | Page number for pagging |
 | `size` | `int` | Row size per page |
-| `data_type` | `int` | malicious_links or security_announcement |
+| `data_type` | `string` | malicious_links or security_announcement |
 
 ### Responses
 
