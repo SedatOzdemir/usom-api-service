@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "85fd8cfd-b140-4942-be13-48bd84a9057e",
+		"name": "USOM API Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "USOM API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint_url}}/usom?page=0&size=10&orderby=desc&data_type=malicious_links&access_token=178C4598781EF1D7F5193920D62FE0523445A6F4E911695FFB1400A0309F86A27924B0CE282589D56F8BEA8A088D61737DBEE043D710CCE66A20284F35B75042",
+					"host": [
+						"{{endpoint_url}}"
+					],
+					"path": [
+						"usom"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "orderby",
+							"value": "desc"
+						},
+						{
+							"key": "data_type",
+							"value": "malicious_links"
+						},
+						{
+							"key": "access_token",
+							"value": "178C4598781EF1D7F5193920D62FE0523445A6F4E911695FFB1400A0309F86A27924B0CE282589D56F8BEA8A088D61737DBEE043D710CCE66A20284F35B75042"
+						}
+					]
+				},
+				"description": "Get Phish Links"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
