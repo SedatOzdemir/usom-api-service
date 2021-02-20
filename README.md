@@ -1,7 +1,7 @@
 <!-- ABOUT THE PROJECT -->
 # About The Project
 
-![Postman Screen Shot](https://github.com/SedatOzdemir/USOM-API-Service/blob/main/USOM%20API.png "Optional title")
+![Postman Screen Shot](https://github.com/SedatOzdemir/USOM-API-Service/blob/main/images/USOM%20API.png?raw=true "Optional title")
 
 The USOM API Service Tool that collecting phishing links and security announcements shared by USOM.gov.tr. Also  ​​to support over API.  It also allows the collected data to be share with API.
 
