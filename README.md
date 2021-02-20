@@ -79,8 +79,21 @@ Gophish returns the following status codes in its API:
 | 401 | `UNAUTHORIZED` |
 | 500 | `INTERNAL SERVER ERROR` |
 
+## Examples
+### cURL Request
+```bash
+curl --location --request GET 'http://127.0.0.1:5001/api/usom?page=0&size=10&orderby=desc&data_type=security_announcement&access_token=178C4598781EF1D7F5193920D62FE0523445A6F4E911695FFB1400A0309F86A27924B0CE282589D56F8BEA8A088D61737DBEE043D710CCE66A20284F35B75042'
+```
 
-<!-- CONTACT -->
+### wGET Request
+
+```bash
+wget --no-check-certificate --quiet \
+  --method GET \
+  --timeout=0 \
+  --header '' \
+   'http://127.0.0.1:5001/api/usom?page=0&size=10&orderby=desc&data_type=security_announcement&access_token=178C4598781EF1D7F5193920D62FE0523445A6F4E911695FFB1400A0309F86A27924B0CE282589D56F8BEA8A088D61737DBEE043D710CCE66A20284F35B75042'
+```
 ## Contact and help
 
 Sedat Ozdemir - [Linkedin](https://www.linkedin.com/in/sedat0zdemir/) - sedat[dot]ozdemir[at]protonmail.com
