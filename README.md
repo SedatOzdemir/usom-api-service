@@ -19,18 +19,18 @@ The USOM API Service Tool that collecting phishing links and security announceme
    ```sh
    screen
    ```
-3. Start API.py with Python3 (You can monitor that screen for API requests)
+3. Start api_service.py with Python3 (You can monitor that screen for API requests)
    ```sh
-   python3 API.py
+   python3 api_service.py
    ```
 4. Detach the screen with Ctrl + A + D keys.
 5. Run screen
    ```sh
    screen
    ```
-6. Start API.py with Python3 (You can monitor that screen while tool collecting data)
+6. Start collector_service.py with Python3 (You can monitor that screen while tool collecting data)
    ```sh
-   python3 Service.py
+   python3 collector_service.py
    ```
 7. Detach the screen with Ctrl + A + D keys
 
