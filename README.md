@@ -72,7 +72,7 @@ The `status` attribute describes if the transaction was successful or not.
 
 ## Status Codes
 
-Gophish returns the following status codes in its API:
+API returns the following status codes in its API:
 
 | Status Code | Description |
 | :--- | :--- |
