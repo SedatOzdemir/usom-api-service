@@ -20,6 +20,7 @@ The USOM API Service Tool that collecting phishing links and security announceme
    screen
    ```
 3. Start api_service.py with Python3 (You can monitor that screen for API requests)
+![API service screenshot](https://github.com/SedatOzdemir/USOM-API-Service/blob/main/images/API%20Service%20Screenshot.png?raw=true "Optional title")
    ```sh
    python3 api_service.py
    ```
@@ -29,6 +30,7 @@ The USOM API Service Tool that collecting phishing links and security announceme
    screen
    ```
 6. Start collector_service.py with Python3 (You can monitor that screen while tool collecting data)
+![Collector service screenshot](https://github.com/SedatOzdemir/USOM-API-Service/blob/main/images/Collector%20Screenshot.png?raw=true "Optional title")
    ```sh
    python3 collector_service.py
    ```
