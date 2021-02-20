@@ -62,7 +62,7 @@ API endpoints return the JSON representation of the resources created or edited.
 ```javascript
 {
   "status" : string,
-  "message" : bool,
+  "message" : string,
 }
 ```
 
