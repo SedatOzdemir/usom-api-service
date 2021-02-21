@@ -72,10 +72,8 @@ def getlinks():
     jsonExport = json.dumps( [dict(ix) for ix in Rows] , ensure_ascii=False)
     JsonResponse = json.loads(jsonExport)
 
-    myjson = {'TotalRecords':GetDatabaseRowCount(DatabaseName)[0],'Size': len(JsonResponse), 'CurrentPage': page, 'Data': JsonResponse}
-
-    printable = json.dumps(myjson)
-    return Response(printable, mimetype='application/json', status=200)
+    Json = {'TotalRecords':GetDatabaseRowCount(DatabaseName)[0],'Size': len(JsonResponse), 'CurrentPage': page, 'Data': JsonResponse}
+    return Response(json.dumps(Json), mimetype='application/json', status=200)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5001)
