@@ -97,8 +97,6 @@ def CollectSecurityAnnouncement():
 
     while True:
         try:
-
-            Monitor("Info", "Security announcement checked successfully but nothing found.", "")
             Response = BeautifulSoup(Request('https://www.usom.gov.tr/tehdit/'+str(LastVulnValue[0] + 1)+'.html').content,"lxml")
             if "not found" not in Response.text:
                 Vulntitle = Response.find('h1').text
@@ -124,9 +122,7 @@ def CollectPhishLinks():
     while True:
 
         try:
-            Monitor("Info", "Phishing links checked successfully but nothing found.", "")
             Response = BeautifulSoup(Request('https://www.usom.gov.tr/zararli-baglantilar/1.html').content,"lxml")
-                        
             Tables = Response.find("table")
             Fields = Response.findAll('td')
 
