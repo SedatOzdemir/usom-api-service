@@ -1,7 +1,7 @@
 <!-- ABOUT THE PROJECT -->
 # About The Project
 
-![Postman Screen Shot](https://github.com/SedatOzdemir/USOM-API-Service/blob/main/images/USOM%20API.png?raw=true "Optional title")
+![Postman Screen Shot](https://github.com/SedatOzdemir/usom-api-service/blob/main/images/USOM%20API.png?raw=true "Optional title")
 
 The USOM API Service Tool that collecting phishing links and security announcements shared by USOM.gov.tr. Also  ​​to support over API.  It also allows the collected data to be share with API.
 
@@ -12,7 +12,7 @@ The USOM API Service Tool that collecting phishing links and security announceme
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/SedatOzdemir/USOM-API-Service
+   git clone https://github.com/SedatOzdemir/usom-api-service
    ```
   
 2. Run screen
@@ -20,7 +20,7 @@ The USOM API Service Tool that collecting phishing links and security announceme
    screen
    ```
 3. Start api_service.py with Python3 (You can monitor that screen for API requests)
-![API service screenshot](https://github.com/SedatOzdemir/USOM-API-Service/blob/main/images/API%20Service%20Screenshot.png?raw=true "Optional title")
+![API service screenshot](https://github.com/SedatOzdemir/usom-api-service/blob/main/images/API%20Service%20Screenshot.png?raw=true "Optional title")
    ```sh
    python3 api_service.py
    ```
@@ -30,7 +30,7 @@ The USOM API Service Tool that collecting phishing links and security announceme
    screen
    ```
 6. Start collector_service.py with Python3 (You can monitor that screen while tool collecting data)
-![Collector service screenshot](https://github.com/SedatOzdemir/USOM-API-Service/blob/main/images/Collector%20Screenshot.png?raw=true "Optional title")
+![Collector service screenshot](https://github.com/SedatOzdemir/usom-api-service/blob/main/images/Collector%20Screenshot.png?raw=true "Optional title")
    ```sh
    python3 collector_service.py
    ```
@@ -99,4 +99,4 @@ wget --no-check-certificate --quiet \
 ## Contact and help
 
 Sedat Ozdemir - [Linkedin](https://www.linkedin.com/in/sedat0zdemir/) - sedat[dot]ozdemir[at]protonmail.com
-Project Link: [https://github.com/SedatOzdemir/USOM-API-Service](https://github.com/SedatOzdemir/USOM-API-Service)
+Project Link: [https://github.com/SedatOzdemir/usom-api-service](https://github.com/SedatOzdemir/usom-api-service)
