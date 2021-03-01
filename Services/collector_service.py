@@ -27,8 +27,10 @@ def GetConfigurations(get):
     config.read('config.ini')
 
     # read values from a section
-    if get == "Interval":
-        return config.getint('Service', 'Interval')
+    if get == "SE_Interval":
+        return config.getint('Service', 'SE_Interval')
+    elif get == "ML_Interval":
+        return config.getint('Service', 'ML_Interval')
     elif get == "DatabasePath":
         return config.get('DatabaseConfigurations', 'DatabasePath')
 
@@ -114,13 +116,12 @@ def CollectSecurityAnnouncement():
             LastVulnValue[0] = LastVulnValue[0] + 1
             Monitor("Error", str(Error),"")
         
-        time.sleep(GetConfigurations('Interval'))
+        time.sleep(GetConfigurations('SE_Interval'))
     
 
 def CollectPhishLinks():
     Monitor("Info", "Phishing links ckecking now, please wait.", "")
     while True:
-
         try:
             Response = BeautifulSoup(Request('https://www.usom.gov.tr/zararli-baglantilar/1.html').content,"lxml")
             Tables = Response.find("table")
@@ -136,7 +137,7 @@ def CollectPhishLinks():
         except Exception as Error:
             Monitor("Error", str(Error), Fields[i + 1].text)
                     
-        time.sleep(GetConfigurations('Interval'))
+        time.sleep(GetConfigurations('ML_Interval'))
 
 # --------------------------------- #
 # ------------ Threads ------------ #
